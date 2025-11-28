@@ -1,0 +1,41 @@
+:root {
+  --pokemon-yellow: #ffcb05;
+  --pokemon-dark-yellow: #c7a008;
+  --pokemon-red: #ff3e3e;
+  --pokemon-dark-red: #cc0000;
+  --pokemon-blue: #3b4cca;
+  --pokemon-dark-blue: #2a3b93;
+  --bg-gradient: linear-gradient(135deg, #ffe066 0%, #ffcb05 100%);
+  --card-bg: #ff3e3e;
+  --text-color: #ffffff;
+  --border-radius: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Futura', 'Trebuchet MS', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-gradient);
+  min-height: 100vh;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-style: inherit;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#root {
+  min-height: 100vh;
+}

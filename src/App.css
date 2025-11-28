@@ -1,0 +1,84 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: var(--pokemon-yellow);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-bottom: 4px solid var(--pokemon-red);
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  color: var(--pokemon-red);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: none;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.app-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.app-nav button {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border: 3px solid var(--pokemon-red);
+  background: transparent;
+  color: var(--pokemon-red);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.app-nav button:hover {
+  background: rgba(255, 62, 62, 0.1);
+  transform: translateY(-2px);
+}
+
+.app-nav button.active {
+  background: var(--pokemon-red);
+  color: white;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.2);
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 1rem;
+  }
+
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .app-nav {
+    gap: 0.5rem;
+  }
+
+  .app-nav button {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .app-main {
+    padding: 1rem;
+  }
+}
